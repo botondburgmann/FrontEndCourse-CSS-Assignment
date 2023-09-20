@@ -1,0 +1,431 @@
+body {
+  font-family: "Roboto", sans-serif;
+  /* max-width: 390px; */
+  min-height: 390px;
+}
+
+.hero {
+  background-color: #1f2937;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.hero-title {
+  font-size: 48px;
+  font-weight: 900;
+  color: #f9faf8;
+  padding: 60px 0 30px 0;
+}
+
+.hero-msg {
+  font-size: 18px;
+  color: #e5e7eb;
+  text-align: center;
+  line-height: 1.6;
+  padding-bottom: 60px;
+}
+
+.food-categories {
+  font-size: 14px;
+  font-weight: 300;
+  color: #e5e7eb;
+  padding-bottom: 10px;
+}
+
+ul {
+  display: flex;
+  gap: 7px;
+}
+
+ul li {
+  list-style: none;
+  border: 1px solid #f9faf8;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+ul li:hover {
+  color: #3882f6;
+  border: 1px solid #3882f6;
+}
+
+.popular {
+  padding: 60px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.popular-title {
+  padding-bottom: 10px;
+}
+
+.popular-msg {
+}
+
+.cards-container {
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-wrapper {
+  margin-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+
+.food-image {
+  width: 100%;
+  height: 300px;
+  cursor: pointer;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.food-text {
+  text-align: center;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.name-and-price {
+  padding-bottom: 10px;
+}
+
+.recipe-title {
+  padding-bottom: 8px;
+}
+
+.recipe-price {
+}
+
+.ingredients {
+  line-height: 1.6;
+}
+
+.recipe-ingredients {
+  padding-bottom: 10px;
+  margin-top: 10px;
+}
+
+.category {
+  background-color: #1f2937;
+  color: #e5e7eb;
+  width: 90px;
+  margin: 0 auto;
+  border-radius: 5px;
+}
+
+.recipe-category {
+}
+
+.reviews-section {
+  background-color: #e5e7eb;
+  display: flex;
+  flex-direction: column;
+  padding: 60px 20px;
+  padding-bottom: 80px;
+}
+
+.reviews-text {
+  text-align: center;
+
+  padding-bottom: 40px;
+}
+
+.reviews-testimonial {
+  padding-bottom: 5px;
+  color: #183b6c;
+  letter-spacing: 0.7px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.reviews-title {
+}
+
+.reviews-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.reviews-wrapper {
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+  background-color: #f9faf8;
+  padding: 30px 20px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.reviews-wrapper:hover {
+  transform: scale(1.1);
+  transition: all 0.35s;
+  background-color: #3882f6;
+  color: #e5e7eb;
+}
+
+.reviews-icon {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 20px;
+}
+
+.reviews-msg {
+  line-height: 1.6;
+}
+
+.reviews-user {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-top: 20px;
+}
+
+.reviews-user-img {
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.reviews-user-name {
+  color: #183b6c;
+  font-weight: 700;
+}
+
+.reviews-wrapper:hover .reviews-user .reviews-user-name {
+  color: #e5e7eb;
+}
+
+.booking-section {
+  background-image: url("../images/restaurant-1.jpg");
+  background-position: center;
+  position: relative;
+
+  height: 500px;
+}
+
+.booking-overlay {
+  padding: 80px 20px;
+  background-color: #1f2937bd;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+
+.booking-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  color: #f9faf8;
+  border: 1px solid white;
+  padding: 40px 20px;
+}
+
+.booking-title {
+}
+
+.booking-msg {
+  text-align: center;
+  line-height: 1.6;
+  max-width: 70%;
+}
+
+.booking-button {
+  margin-top: 30px;
+  background-color: #3882f6;
+  color: #f9faf8;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.booking-button:hover {
+  transition: all 0.35s;
+  transform: scale(1.1);
+}
+
+/**************************************************** MEDIA QUERIES */
+
+@media only screen and (min-width: 513px) and (max-width: 1023px) {
+  .food-categories {
+    gap: 40px;
+  }
+
+  ul {
+    gap: 20px;
+  }
+
+  .cards-container {
+    flex-direction: row;
+    gap: 30px;
+    justify-content: center;
+  }
+
+  .card-wrapper {
+    width: 300px;
+  }
+
+  .food-image {
+  }
+
+  img {
+    width: 100%;
+  }
+
+  .reviews-container {
+    flex-direction: row;
+  }
+
+  .reviews-text {
+    padding: 0 0 60px 0;
+  }
+
+  .reviews-section {
+    padding: 120px 60px 160px 60px;
+  }
+
+  .reviews-wrapper {
+    width: 400px;
+    height: auto;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  h2 {
+    font-size: 28px;
+  }
+
+  .food-categories {
+    gap: 60px;
+  }
+
+  ul {
+    gap: 40px;
+  }
+
+  .popular {
+    padding: 80px 20px;
+  }
+
+  .cards-container {
+    flex-direction: row;
+    gap: 90px;
+    justify-content: center;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  .card-wrapper {
+    width: 700px;
+    flex-direction: row;
+    gap: 30px;
+  }
+
+  .food-image {
+    height: 200px;
+    max-width: 200px;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  .food-text {
+    text-align: left;
+    margin-top: 20px;
+    width: 100%;
+  }
+
+  .name-and-price {
+    padding-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .recipe-title {
+    padding-bottom: 8px;
+    font-size: 20px;
+    max-width: 160px;
+  }
+
+  .recipe-price {
+    padding-bottom: 8px;
+  }
+
+  .ingredients {
+    line-height: 1.6;
+  }
+
+  .recipe-ingredients {
+    padding-bottom: 10px;
+    margin-top: 10px;
+  }
+
+  .category {
+    background-color: #1f2937;
+    color: #e5e7eb;
+    width: 90px;
+    margin: 0;
+    border-radius: 5px;
+  }
+
+  .recipe-category {
+    text-align: center;
+  }
+
+  .reviews-section {
+    padding: 140px 60px 160px 60px;
+  }
+
+  .reviews-text {
+    padding: 0 0 80px 0;
+  }
+
+  .reviews-container {
+    flex-direction: row;
+    gap: 60px;
+  }
+
+  .reviews-wrapper {
+    width: 400px;
+    height: 430px;
+  }
+
+  .booking-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    color: #f9faf8;
+    border: 1px solid white;
+    padding: 40px 20px;
+    max-width: 70%;
+    margin: 0 auto;
+  }
+}
