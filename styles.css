@@ -20,7 +20,15 @@ button,
 li a {
   font-size: 1.8rem;
 }
+button,
+li a {
+  cursor: pointer;
+}
 
+ul li:hover {
+  color: #3882f6;
+  border: 1px solid #3882f6;
+}
 .main,
 li a {
   color: #e5e7eb;
@@ -90,8 +98,6 @@ button {
 ul {
   list-style-type: none;
   margin-right: 8rem;
-  overflow: hidden;
-  justify-content: end;
 }
 li {
   float: right;
@@ -108,7 +114,7 @@ h2 {
   margin: 3rem 0;
 }
 .hero {
-  padding: 4rem 8rem 4rem 10rem;
+  padding: 0 8rem 4rem 10rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
@@ -171,6 +177,17 @@ h2 {
   padding: 2rem;
 } 
 
+.logo {
+  padding-left: 5rem;
+  width: 20rem;
+}
+
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 @media screen and (max-width: 1024px) {
   .hero {
     grid-template-columns: repeat(1, 1fr);
@@ -213,8 +230,12 @@ h2 {
 
   .call-to-action {
     padding: 5rem;
+    margin: 5rem;
   }
   .testimonial {
     padding: 2rem 5rem;
+  }
+  .logo{
+    padding:0;
   }
 }
