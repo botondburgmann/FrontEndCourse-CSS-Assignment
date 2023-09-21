@@ -4,8 +4,7 @@ body {
   min-height: 390px;
 }
 
-.hero {
-  border: 2px solid red;
+.hero-menu {
   background-color: #1f2937;
   display: flex;
   flex-direction: column;
@@ -35,12 +34,14 @@ body {
   padding-bottom: 10px;
 }
 
-ul {
+.food-list {
   display: flex;
-  gap: 7px;
+  justify-content: center;
+  gap: 10px;
+  margin: 0;
 }
 
-ul li {
+.food-list li {
   list-style: none;
   border: 1px solid #f9faf8;
   padding: 5px 10px;
@@ -61,7 +62,7 @@ ul li:hover {
 }
 
 .popular-title {
-  padding-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .popular-msg {
@@ -149,11 +150,12 @@ img {
   padding-bottom: 5px;
   color: #183b6c;
   letter-spacing: 0.7px;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 500;
 }
 
 .reviews-title {
+  margin-top: 10px;
 }
 
 .reviews-container {
@@ -218,21 +220,21 @@ img {
   background-image: url("../images/restaurant-1.jpg");
   background-position: center;
   position: relative;
-
-  height: 500px;
+  overflow: hidden;
+  height: 700px;
 }
 
 .booking-overlay {
-  padding: 80px 20px;
   background-color: #1f2937bd;
   position: absolute;
   top: 0;
   left: 0;
-  height: 500px;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   width: 100%;
+  margin: 0 auto;
 }
 
 .booking-wrapper {
@@ -246,6 +248,7 @@ img {
 }
 
 .booking-title {
+  color: #f9faf8;
 }
 
 .booking-msg {
@@ -271,6 +274,16 @@ img {
 }
 
 /**************************************************** MEDIA QUERIES */
+@media only screen and (max-width: 513px) {
+  .booking-title {
+    text-align: center;
+  }
+
+  .booking-wrapper {
+    width: 60%;
+    margin: 0 auto;
+  }
+}
 
 @media only screen and (min-width: 513px) and (max-width: 1023px) {
   .food-categories {
@@ -281,6 +294,10 @@ img {
     gap: 20px;
   }
 
+  .hero-msg {
+    max-width: 70%;
+  }
+
   .cards-container {
     flex-direction: row;
     gap: 30px;
@@ -289,9 +306,6 @@ img {
 
   .card-wrapper {
     width: 300px;
-  }
-
-  .food-image {
   }
 
   img {
@@ -307,12 +321,17 @@ img {
   }
 
   .reviews-section {
-    padding: 120px 60px 160px 60px;
+    padding: 100px 60px 160px 60px;
   }
 
   .reviews-wrapper {
     width: 400px;
     height: auto;
+  }
+
+  .booking-wrapper {
+    width: 70%;
+    margin: 0 auto;
   }
 }
 
@@ -330,7 +349,7 @@ img {
   }
 
   .popular {
-    padding: 80px 20px;
+    padding: 60px 20px 80px 20px;
   }
 
   .cards-container {
@@ -401,7 +420,7 @@ img {
   }
 
   .reviews-section {
-    padding: 140px 60px 160px 60px;
+    padding: 100px 60px 160px 60px;
   }
 
   .reviews-text {
@@ -416,6 +435,10 @@ img {
   .reviews-wrapper {
     width: 400px;
     height: 430px;
+  }
+
+  .reviews-title {
+    margin-bottom: 0;
   }
 
   .booking-wrapper {
