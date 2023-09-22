@@ -2,23 +2,47 @@
     font-size: 30px;
     text-align: center;
     padding: 20px;
-
 }
 
 .textcontainer{
   text-align: center;
-  
   }
 
-.journey:hover{
+ 
+
+.journey:hover {
     padding:10px;
     color: black;
     box-shadow: 5px 5px 5px 5px black;
+    visibility:visible;
+    transition: 0.4s ease-in;
+    display: block;
 }
 
-.hiddengimmick{
-    visibility:hidden;
+
+.CTA{
+    text-decoration: none;
+    
 }
- .hiddengimmick:hover{
-    visibility:visible;
+
+
+@media only screen and (max-width: 513px) {
+    .aboutTitle{
+        font-size : 35px; 
+    }
+   
+    hr{
+        width: 70%;
+        margin: auto;
+        align-self: center;
+    }
+    
+
+
+@media only screen and (min-width: 513px) and (max-width: 1023px) {
+
+}
+
+@media only screen and (min-width: 1024px) {
+    
 }
