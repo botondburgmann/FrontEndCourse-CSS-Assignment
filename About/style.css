@@ -39,14 +39,17 @@ hr {
 
 #CTA:hover{
     text-decoration: underline;
-    
 }
-
 
 .Sub_title{
     font-size: 30px;
-    padding:.5em;
+    padding:1em;
 }
+
+.Final_paragraph{
+    margin-bottom: 2.5rem
+}
+
 
 @media only screen and (max-width:513px){
     #navlist{
