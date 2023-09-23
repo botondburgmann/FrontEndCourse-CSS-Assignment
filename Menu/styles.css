@@ -1,7 +1,7 @@
 body {
   font-family: "Roboto", sans-serif;
   /* max-width: 390px; */
-  min-height: 390px;
+  /* min-height: 390px; */
 }
 
 .hero-menu {
@@ -10,6 +10,7 @@ body {
   flex-direction: column;
   align-items: center;
   padding: 20px;
+  padding-bottom: 90px;
 }
 
 .hero-title {
@@ -37,7 +38,7 @@ body {
 .food-list {
   display: flex;
   justify-content: center;
-  gap: 10px;
+  /* gap: 10px; */
   margin: 0;
 }
 
