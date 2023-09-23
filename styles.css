@@ -182,6 +182,10 @@ h2 {
 .testimonial {
   padding: 10rem 15rem;
   background-color: #e5e7eb;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  
 }
 
 .testimonial blockquote {
@@ -191,6 +195,7 @@ h2 {
 
 .quoter {
   font-weight: bold;
+  
 }
 
 .call-to-action {
@@ -237,6 +242,8 @@ nav {
   .quoter {
     font-size: 1.5rem;
   }
+
+  
 
   .hero,
   .hero article {
