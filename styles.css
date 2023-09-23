@@ -29,6 +29,12 @@ ul li:hover {
   color: #3882f6;
   border: 1px solid #3882f6;
 }
+
+main{
+  font-size: 2em;
+}
+
+
 .main,
 li a {
   color: #e5e7eb;
@@ -45,6 +51,7 @@ ul,
 .hero {
   display: flex;
   flex-wrap: wrap;
+  
 }
 
 li a,
@@ -138,6 +145,7 @@ h2 {
 
 .image-container {
   justify-content: center;
+  margin:10rem;
 }
 
 .image-container > div {
