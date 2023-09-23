@@ -55,7 +55,7 @@ li a,
 }
 
 h2,
-.testimonial p,
+.testimonial blockquote,
 .quoter {
   font-size: 3.6rem;
 }
@@ -78,7 +78,7 @@ button {
   align-items: center;
 }
 
-.testimonial p,
+.testimonial blockquote,
 .quoter {
   color: #1f2937;
 }
@@ -149,14 +149,13 @@ h2 {
   background-color: #e5e7eb;
 }
 
-.testimonial p {
+.testimonial blockquote {
   font-weight: lighter;
   font-style: italic;
 }
 
 .quoter {
   font-weight: bold;
-  text-align: end;
 }
 
 .call-to-action {
@@ -199,7 +198,7 @@ nav{
 }
 
 @media screen and (max-width: 512px) {
-  .testimonial p,
+  .testimonial blockquote,
   .quoter {
     font-size: 1.5rem;
   }
