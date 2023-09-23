@@ -1,4 +1,4 @@
- * {
+* {
   margin: 0;
   padding: 0;
 }
@@ -30,10 +30,9 @@ ul li:hover {
   border: 1px solid #3882f6;
 }
 
-main{
+main {
   font-size: 2em;
 }
-
 
 .main,
 li a {
@@ -47,11 +46,9 @@ button,
 
 ul,
 .image-container,
-.call-to-action,
-.hero {
+.call-to-action {
   display: flex;
   flex-wrap: wrap;
-  
 }
 
 li a,
@@ -72,6 +69,7 @@ h2,
 nav {
   background-color: #1f2937;
 }
+
 .hero,
 .footer,
 nav,
@@ -89,7 +87,6 @@ button {
 .quoter {
   color: #1f2937;
 }
-
 
 h1 {
   font-size: 4.8rem;
@@ -120,16 +117,46 @@ h2 {
   color: #1f2937;
   margin: 3rem 0;
 }
+
 .hero {
   padding: 0 8rem 4rem 10rem;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  /* display: grid;
+  grid-template-columns: repeat(2, 1fr); */
+  display: flex;
+  justify-content: center;
+  gap: 30px;
 }
+
+.hero aside {
+}
+
+.hero aside h1 {
+  margin-bottom: 20px;
+}
+
+.hero aside p {
+  max-width: 80%;
+  line-height: 1.6;
+  margin-bottom: 40px;
+}
+
+.hero figure {
+  border: 2px solid white;
+}
+
 .hero img {
   width: 20rem;
   justify-self: end;
 }
 
+.information {
+  margin-top: 50px;
+  /* border: 2px solid red; */
+}
+
+.information h2 {
+  margin-bottom: 0;
+}
 .information img {
   object-fit: cover;
   height: 20rem;
@@ -145,7 +172,7 @@ h2 {
 
 .image-container {
   justify-content: center;
-  margin:10rem;
+  margin: 60px auto 80px auto;
 }
 
 .image-container > div {
@@ -187,14 +214,14 @@ h2 {
 
 .footer {
   padding: 2rem;
-} 
+}
 
 .logo {
   padding-left: 5rem;
   width: 20rem;
 }
 
-nav{
+nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -236,10 +263,15 @@ nav{
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-bottom: 90px;
   }
 
   .hero img {
     margin-top: 5rem;
+  }
+
+  .hero .main {
+    text-align: center;
   }
 
   .call-to-action {
@@ -249,8 +281,7 @@ nav{
   .testimonial {
     padding: 2rem 5rem;
   }
-  .logo{
-    padding:0;
+  .logo {
+    padding: 0;
   }
 }
-
