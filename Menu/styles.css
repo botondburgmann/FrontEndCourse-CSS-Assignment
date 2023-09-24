@@ -10,14 +10,14 @@ body {
   flex-direction: column;
   align-items: center;
   padding: 20px;
-  padding-bottom: 90px;
+  /*padding-bottom: 90px;*/
 }
 
 .hero-title {
-  font-size: 48px;
+  font-size: 5em;
   font-weight: 900;
   color: #f9faf8;
-  padding: 10px 0 30px 0;
+  /*padding: 10px 0 30px 0;*/
 }
 
 .hero-msg {
@@ -25,7 +25,7 @@ body {
   color: #e5e7eb;
   text-align: center;
   line-height: 1.6;
-  padding-bottom: 60px;
+  padding: 23px; /* was 50 px*/
 }
 
 .food-categories {
@@ -108,9 +108,6 @@ img {
 
 .recipe-title {
   padding-bottom: 8px;
-}
-
-.recipe-price {
 }
 
 .ingredients {
@@ -275,6 +272,16 @@ img {
 }
 
 /**************************************************** MEDIA QUERIES */
+
+@media only screen and (max-width: 485px){
+/* PENDING CHANGES*/
+
+
+}
+
+
+
+
 @media only screen and (max-width: 513px) {
   .booking-title {
     text-align: center;
@@ -284,7 +291,19 @@ img {
     width: 60%;
     margin: 0 auto;
   }
+  nav{
+   
+    flex-direction : column;
+  }
+  
+  ul{
+    margin: 0;
+    justify-content: center;
+  }
+  
 }
+
+
 
 @media only screen and (min-width: 513px) and (max-width: 1023px) {
   .food-categories {
@@ -345,9 +364,9 @@ img {
     gap: 60px;
   }
 
-  ul {
+ /** ul {
     gap: 40px;
-  }
+  }*/
 
   .popular {
     padding: 60px 20px 80px 20px;
@@ -453,4 +472,13 @@ img {
     max-width: 70%;
     margin: 0 auto;
   }
+
+
+  /* ADDED CHANGES*/
+  .navlist{
+    list-style-type: none;
+    margin-right: 2rem;
+    flex-wrap:initial;
+  }
+
 }
