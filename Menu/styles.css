@@ -85,7 +85,7 @@ ul li:hover {
 
 .food-image {
   width: 100%;
-  height: auto;
+  height: 300px;
   cursor: pointer;
 }
 
@@ -274,47 +274,33 @@ img {
 /**************************************************** MEDIA QUERIES */
 
 @media only screen and (max-width: 485px){
-  .hero-title {
-    font-size: 2.5em; 
-  }
+/* PENDING CHANGES*/
 
-  .hero-msg {
-    font-size: 16px; 
-    padding: 10px; 
-  }
-
-  .food-list li {
-    padding: 3px 6px; 
-  }
-
-  .cards-container {
-    flex-direction: column; 
-  }
-
-  .card-wrapper {
-    width: 100%; 
-    margin-bottom: 30px;
-  }
-
-  .food-image img {
-    height: auto; 
-  }
-
-  .name-and-price {
-    flex-direction: column; 
-    align-items: center; 
 
 }
 
 
 
-@media only screen and (min-width: 486px) and (max-width: 513px) {
-   .hero-title {
-    font-size: 4em; 
+
+@media only screen and (max-width: 513px) {
+  .booking-title {
+    text-align: center;
   }
-  .hero-msg {
-    font-size: 17px; 
+
+  .booking-wrapper {
+    width: 60%;
+    margin: 0 auto;
   }
+  nav{
+   
+    flex-direction : column;
+  }
+  
+  ul{
+    margin: 0;
+    justify-content: center;
+  }
+  
 }
 
 
@@ -370,38 +356,129 @@ img {
 }
 
 @media only screen and (min-width: 1024px) {
-  
-  .hero-title {
-    font-size: 6em;
+  h2 {
+    font-size: 28px;
   }
 
-  .hero-msg {
-    font-size: 20px; 
+  .food-categories {
+    gap: 60px;
   }
 
-  .food-list li {
-    padding: 5px 10px; 
+ /** ul {
+    gap: 40px;
+  }*/
+
+  .popular {
+    padding: 60px 20px 80px 20px;
   }
 
   .cards-container {
-    flex-direction: row; 
+    flex-direction: row;
+    gap: 90px;
+    justify-content: center;
+    padding-left: 60px;
+    padding-right: 60px;
   }
 
   .card-wrapper {
-    width: 300px; 
-    margin-bottom: 60px;
+    width: 700px;
+    flex-direction: row;
+    gap: 30px;
   }
 
-  .food-image img {
-    height: 300px; 
+  .food-image {
+    height: 200px;
+    max-width: 200px;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  .food-text {
+    text-align: left;
+    margin-top: 20px;
+    width: 100%;
   }
 
   .name-and-price {
-    flex-direction: row; 
-    align-items: flex-start; 
+    padding-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
 
   .recipe-title {
-    font-size: 24px; 
+    padding-bottom: 8px;
+    font-size: 20px;
+    max-width: 160px;
   }
+
+  .recipe-price {
+    padding-bottom: 8px;
+  }
+
+  .ingredients {
+    line-height: 1.6;
+  }
+
+  .recipe-ingredients {
+    padding-bottom: 10px;
+    margin-top: 10px;
+  }
+
+  .category {
+    background-color: #1f2937;
+    color: #e5e7eb;
+    width: 90px;
+    margin: 0;
+    border-radius: 5px;
+  }
+
+  .recipe-category {
+    text-align: center;
+  }
+
+  .reviews-section {
+    padding: 100px 60px 160px 60px;
+  }
+
+  .reviews-text {
+    padding: 0 0 80px 0;
+  }
+
+  .reviews-container {
+    flex-direction: row;
+    gap: 60px;
+  }
+
+  .reviews-wrapper {
+    width: 400px;
+    height: 430px;
+  }
+
+  .reviews-title {
+    margin-bottom: 0;
+  }
+
+  .booking-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    color: #f9faf8;
+    border: 1px solid white;
+    padding: 40px 20px;
+    max-width: 70%;
+    margin: 0 auto;
+  }
+
+
+  /* ADDED CHANGES*/
+  .navlist{
+    list-style-type: none;
+    margin-right: 2rem;
+    flex-wrap:initial;
+  }
+
 }
